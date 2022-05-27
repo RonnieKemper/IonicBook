@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      table Of Contents
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">table Of Contents</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start" pager="true"  pager="false" #mySlider>
+        <ion-back-button defaultHref="tabs/cover"></ion-back-button>
+        <a href="tabs/one" class="button button-outline button-positive">
+          <ion-button>
+            next
+            <ion-icon slot="end"></ion-icon>
+          </ion-button>
+        </a>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-row style="border-bottom: groove;">
+    <ion-col col-4>
+    <ion-label ><a href="tabs/one">buttons</a></ion-label>
+  </ion-col>
+  <ion-col col-4>
+    <ion-label ><a href="tabs/two">grid</a></ion-label>
+  </ion-col>
+    <ion-col col-4>
+    <ion-label ><a href="tabs/three">textarea</a></ion-label>
+  </ion-col>
+</ion-row>
+<ion-row style="border-bottom: groove;">
+    <ion-col col-4>
+    <ion-label ><a href="tabs/four">slides</a></ion-label>
+  </ion-col>
+  <ion-col col-4>
+    <ion-label ><a href="tabs/five">tabs</a></ion-label>
+  </ion-col>
+    <ion-col col-4>
+    <ion-label ><a href="tabs/six">menu</a></ion-label>
+  </ion-col>
+</ion-row>
+
+
+
+  
+
+  <app-explore-container name="table Of Contents"></app-explore-container>
+</ion-content>

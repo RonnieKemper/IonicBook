@@ -1,0 +1,110 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      page one: Buttons
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">one</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start" pager="true"  pager="false" #mySlider>
+        <ion-back-button defaultHref="tabs/tableOfContents"></ion-back-button>
+        <a href="tabs/two" class="button button-outline button-positive">
+          <ion-button>
+            next
+            <ion-icon slot="end"></ion-icon>
+          </ion-button>
+        </a>
+        <a href="tabs/tableOfContents" class="button button-outline button-positive">
+          <ion-button>
+            tableOfContents
+            <ion-icon slot="end"></ion-icon>
+          </ion-button>
+        </a>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Disabled and readonly textarea in an item with a stacked label -->
+  <ion-item>
+    <ion-label position="stacked">IonicButtons</ion-label>
+    <ion-textarea  rows="100" scroll="true"
+      warning
+      readonly
+      value=' <!--https://ionicframework.com/docs/v4/api/button-->
+      import React from "react";
+      import { IonButton, IonIcon, IonContent } from "@ionic/react";
+      export const ButtonExample: React.FC = () => (
+        <IonContent>
+          {/*-- Default --*/}
+          <IonButton>Default</IonButton>
+
+          {/*-- Anchor --*/}
+          <IonButton href="#">Anchor</IonButton>
+
+          <--{/*-- Colors --*/}
+          <IonButton color="primary">Primary</IonButton>
+          <IonButton color="secondary">Secondary</IonButton>
+          <IonButton color="tertiary">Tertiary</IonButton>
+          <IonButton color="success">Success</IonButton>
+          <IonButton color="warning">Warning</IonButton>
+          <IonButton color="danger">Danger</IonButton>
+          <IonButton color="light">Light</IonButton>
+          <IonButton color="medium">Medium</IonButton>
+          <IonButton color="dark">Dark</IonButton>
+
+          {/*-- Expand --*/}
+          <IonButton expand="full">Full Button</IonButton>
+          <IonButton expand="block">Block Button</IonButton>
+
+          {/*-- Round --*/}
+          <IonButton shape="round">Round Button</IonButton>
+
+          {/*-- Fill --*/}
+          <IonButton expand="full" fill="outline">Outline + Full</IonButton>
+          <IonButton expand="block" fill="outline">Outline + Block</IonButton>
+          <IonButton shape="round" fill="outline">Outline + Round</IonButton>
+
+          {/*-- Icons --*/}
+          <IonButton>
+            <IonIcon slot="start" name="star" />
+            Left Icon
+          </IonButton>
+
+          <IonButton>
+            Right Icon
+            <IonIcon slot="end" name="star" />
+          </IonButton>
+
+          <IonButton>
+            <IonIcon slot="icon-only" name="star" />
+          </IonButton>
+
+          {/*-- Sizes --*/}
+          <IonButton size="large">Large</IonButton>
+          <IonButton>Default</IonButton>
+          <IonButton size="small">Small</IonButton>
+        </IonContent>
+      );'
+     
+    ></ion-textarea>
+  </ion-item>
+
+
+
+
+
+  
+</ion-content>
+
+
+
+       

@@ -1,0 +1,184 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      page two: grid
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">page two: grid</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start" pager="true"  pager="false" #mySlider>
+        <ion-back-button defaultHref="tabs/one"></ion-back-button>
+        <a href="tabs/three" class="button button-outline button-positive">
+          <ion-button>
+            next
+            <ion-icon slot="end"></ion-icon>
+          </ion-button>
+        </a>
+        <a href="tabs/tableOfContents" class="button button-outline button-positive">
+          <ion-button>
+            tableOfContents
+            <ion-icon slot="end"></ion-icon>
+          </ion-button>
+        </a>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+    <!-- Disabled and readonly textarea in an item with a stacked label -->
+    <ion-item>
+      <ion-label position="stacked">IonicGrid</ion-label>
+      <ion-textarea  rows="100" 
+        warning
+        readonly
+        value='
+        <!--https://ionicframework.com/docs/v4/api/grid-->
+        import React from "react";
+        import { IonGrid, IonRow, IonCol, IonContent } from "@ionic/react";
+        
+        export const GridExample: React.FC = () => (
+          <IonContent>
+            <IonGrid>
+              <IonRow>
+                <IonCol>ion-col</IonCol>
+                <IonCol>ion-col</IonCol>
+                <IonCol>ion-col</IonCol>
+                <IonCol>ion-col</IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol size="6">ion-col size="6"</IonCol>
+                <IonCol>ion-col</IonCol>
+                <IonCol>ion-col</IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol size="3">ion-col size="3"</IonCol>
+                <IonCol>ion-col</IonCol>
+                <IonCol size="3">ion-col size="3"</IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol size="3">ion-col size="3"</IonCol>
+                <IonCol size="3" offset="3">
+                  ion-col size="3" offset="3"
+                </IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol>ion-col</IonCol>
+                <IonCol>
+                  ion-col
+                  <br />#
+                </IonCol>
+                <IonCol>
+                  ion-col
+                  <br />#
+                  <br />#
+                </IonCol>
+                <IonCol>
+                  ion-col
+                  <br />#
+                  <br />#
+                  <br />#
+                </IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol align-self-start>ion-col start</IonCol>
+                <IonCol align-self-center>ion-col center</IonCol>
+                <IonCol align-self-end>ion-col end</IonCol>
+                <IonCol>
+                  ion-col
+                  <br />#
+                  <br />#
+                </IonCol>
+              </IonRow>
+        
+              <IonRow align-items-start>
+                <IonCol>start ion-col</IonCol>
+                <IonCol>start ion-col</IonCol>
+                <IonCol align-self-end>start ion-col end</IonCol>
+                <IonCol>
+                  ion-col
+                  <br />#
+                  <br />#
+                </IonCol>
+              </IonRow>
+        
+              <IonRow align-items-center>
+                <IonCol>center ion-col</IonCol>
+                <IonCol>center ion-col</IonCol>
+                <IonCol>center ion-col</IonCol>
+                <IonCol>
+                  ion-col
+                  <br />#
+                  <br />#
+                </IonCol>
+              </IonRow>
+        
+              <IonRow align-items-end>
+                <IonCol>end ion-col</IonCol>
+                <IonCol align-self-start>end ion-col start</IonCol>
+                <IonCol>end ion-col</IonCol>
+                <IonCol>
+                  ion-col
+                  <br />#
+                  <br />#
+                </IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol size="12" size-sm>
+                  ion-col size="12" size-sm
+                </IonCol>
+                <IonCol size="12" size-sm>
+                  ion-col size="12" size-sm
+                </IonCol>
+                <IonCol size="12" size-sm>
+                  ion-col size="12" size-sm
+                </IonCol>
+                <IonCol size="12" size-sm>
+                  ion-col size="12" size-sm
+                </IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol size="12" size-md>
+                  ion-col size="12" size-md
+                </IonCol>
+                <IonCol size="12" size-md>
+                  ion-col size="12" size-md
+                </IonCol>
+                <IonCol size="12" size-md>
+                  ion-col size="12" size-md
+                </IonCol>
+                <IonCol size="12" size-md>
+                  ion-col size="12" size-md
+                </IonCol>
+              </IonRow>
+        
+              <IonRow>
+                <IonCol size="6" size-lg offset="3">
+                  ion-col size="6" size-lg offset="3"
+                </IonCol>
+                <IonCol size="3" size-lg>
+                  ion-col size="3" size-lg
+                </IonCol>
+              </IonRow>
+            </IonGrid>
+          </IonContent>
+        );'
+       
+      ></ion-textarea>
+    </ion-item>
+
+  <app-explore-container name="two page"></app-explore-container>
+</ion-content>
